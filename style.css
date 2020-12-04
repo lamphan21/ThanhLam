@@ -502,7 +502,7 @@ nav.sticky a {
 /* -------------------------------------------------------- */
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
 
     .line {
         display: block;
@@ -545,14 +545,25 @@ nav.sticky a {
         font-size: 12px;
         font-weight: 300;
     }
-    .line1 {
+    p.linetext.typing1 {
         width: 310px!important;
-        height: 18px!important;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .linetext {
+        width: 260px!important;
+        height: 15px!important;
         display: block!important;
+        font-size: 12px!important;
+        box-sizing: border-box;
+        padding: 0;
         border-right: 2px solid #AA4E00;
         overflow: hidden;
+        margin-top: 20px;
         white-space: nowrap;
         animation: typewriter1 3s steps(40) 1s 2 normal both,
+                    blinkText 500ms steps(40) infinite normal;
+        -webkit-animation: typewriter1 3s steps(40) 1s 2 normal both,
                     blinkText 500ms steps(40) infinite normal;
     }
 
